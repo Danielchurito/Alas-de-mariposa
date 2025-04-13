@@ -1,14 +1,14 @@
-import styles from "./styles/page.css";
+import styles from "./styles/comments.module.css";
 
 async function Message() {
   const items = await fetch("http://localhost:3000/api/tasks");
   const data = await items.json();
   return (
     <>
-      <div className="contenedor">
+      <div className={styles.contenedor}>
         <h1>Seccion de Comentarios</h1>
         {data.map((e) => (
-          <div key={e.id} className="comment">
+          <div key={e.id} className={styles.comment}>
             <div className="dp">
               <p>{e.name}</p>
               <p>
@@ -19,7 +19,7 @@ async function Message() {
                   e.createdAt.slice(0, 4)}
               </p>
             </div>
-            <p className="hp">{e.text}</p>
+            <p className={styles.hp}>{e.text}</p>
           </div>
         ))}
       </div>

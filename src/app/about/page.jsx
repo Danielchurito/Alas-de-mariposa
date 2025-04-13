@@ -1,13 +1,13 @@
-import "./styles/page.css";
+import styles from "./styles/about.module.css";
 
 function About() {
   return (
     <>
-      <div className="cabeza">
+      <div className={styles.cabeza}>
         <h1>Alas de mariposa</h1>
       </div>
-      <div className="MYC">
-        <div className="contenedor">
+      <div className={styles.MYC}>
+        <div className={styles.contenedor}>
           <h2>quienes somos</h2>
           <p>
             "En Alas de Mariposa trabajamos para empoderar a mujeres en estado
@@ -17,8 +17,8 @@ function About() {
             resiliente para ellas y sus familias."
           </p>
         </div>
-        <div className="mision-vision">
-          <div className="mision">
+        <div className={styles.mision_vision}>
+          <div className={styles.mision}>
             <h1>mision</h1>
             <p>
               Empoderar a las mujeres en estado de vulnerabilidad para que
@@ -57,7 +57,7 @@ function About() {
               <br />
             </p>
           </div>
-          <div className="vision">
+          <div className={styles.vision}>
             <h1>vision</h1>
             <p>
               Un futuro donde las mujeres en estado de vulnerabilidad sean
@@ -78,7 +78,7 @@ function About() {
               potencial. <br /> <br />
               En este futuro, las mujeres son empoderadas, resilientes y
               sostenibles, y contribuyen a la construcción de un mundo más
-              justo, equitativo y sostenible para todos. <br /> <br />
+              justo, equitativo y sostenible para todos. <br /> <br />
             </p>
           </div>
         </div>

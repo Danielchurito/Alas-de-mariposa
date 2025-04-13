@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/NotFound.css";
+import styles from "./styles/NotFound.module.css";
 
 function Notfound() {
   return (
