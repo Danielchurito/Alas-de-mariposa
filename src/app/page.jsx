@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import "./styles/page.css";
+import styles from "./styles/homepage.module.css";
 import { useRouter } from "next/navigation";
 
 export default function Homepage() {
@@ -33,16 +33,16 @@ export default function Homepage() {
   };
 
   return (
-    <div className="comments-container">
+    <div className={styles.comments_container}>
       <h1>Dejanos tu cometario</h1>
-      <form onSubmit={handleSubmit} className="comment-form">
+      <form onSubmit={handleSubmit} className={styles.comment_form}>
         <input
           type="text"
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Tu nombre"
-          className="comment-input"
+          className={styles.comment_input}
           required
         />
 
@@ -52,14 +52,14 @@ export default function Homepage() {
           value={comment}
           onChange={(e) => setComment(e.target.value)}
           placeholder="Escribe algo..."
-          className="comment-input"
+          className={styles.comment_input}
           required
         />
-        <button type="submit" className="comment-button">
+        <button type="submit" className={styles.comment_button}>
           Agregar
         </button>
       </form>
-      <div className="comments-list"></div>
+      <div className={styles.comments_list}></div>
     </div>
   );
 }

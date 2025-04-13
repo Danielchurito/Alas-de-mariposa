@@ -1,0 +1,69 @@
+/* Estilos globales */
+
+/* Contenedor principal pastel, azul fucsia, naranja, */
+.comments_container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(255, 219, 152);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  height: fit-content;
+}
+
+/* Título */
+.comments_container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Formulario */
+.comment_form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.comment_input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.comment_button {
+  padding: 10px 20px;
+  background-color: rgb(255, 93, 255);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.comment_button:hover {
+  background-color: pink;
+}
+
+/* Lista de comentarios */
+.comments_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment_item {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment_item p {
+  margin: 0;
+  color: #555;
+}
