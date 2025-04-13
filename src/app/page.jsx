@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import "./styles/page.css";
+import sty from "./styles/page.module.css";
 import { useRouter } from "next/navigation";
 
 export default function Homepage() {
@@ -33,7 +33,7 @@ export default function Homepage() {
   };
 
   return (
-    <div className="comments-container">
+    <div className={sty.comments_container}>
       <h1>Dejanos tu cometario</h1>
       <form onSubmit={handleSubmit} className="comment-form">
         <input

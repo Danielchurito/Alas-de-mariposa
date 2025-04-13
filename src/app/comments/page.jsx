@@ -1,4 +1,4 @@
-import styles from "./styles/page.css";
+import styles from "./styles/page.module.css";
 
 async function Message() {
   const items = await fetch("http://localhost:3000/api/tasks");
