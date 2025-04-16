@@ -1,8 +1,14 @@
 import styles from "./styles/page.module.css";
 
-async function Message() {
-  const items = await fetch("http://localhost:3000/api/tasks");
+async function getData(){
+  const items = await fetch(process.env.APIMESSAGEPORT || "http://localhost:3000/api/tasks");
   const data = await items.json();
+  return data
+}
+
+
+async function Message() {
+  const data = await getData()
   return (
     <>
       <div className={styles.c}>
