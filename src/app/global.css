@@ -3,9 +3,7 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   color: gray;
-  line-height: 1.5;
   background-image: url("/media/fondo.jpg");
   background-size: cover;
   background-position: center;
@@ -18,34 +16,18 @@ body {
   -moz-backdrop-filter: blur(5px);
   -o-backdrop-filter: blur(5px);
   -ms-backdrop-filter: blur(5px);
+  font-size: 18px;
+  min-height: 100vh;
 }
 
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-    padding: 0;
-  }
+main {
+  flex: 1; /* Empuja el footer hacia abajo */
+}
 
-  .Nav {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 10px;
-  }
-
-  .contenedor {
-    width: 100%;
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
+.footer {
+  background-color: rgb(255, 211, 130);
+  padding: 20px;
+  text-align: center;
 }
 
 /* Para pantallas medianas (tabletas) */
@@ -54,12 +36,7 @@ body {
     font-size: 16px;
   }
 
-  .Nav {
-    justify-content: space-between;
-  }
-
   .contenedor {
-    width: 90%;
     padding: 15px;
   }
 
@@ -69,5 +46,27 @@ body {
 
   p {
     font-size: 1rem;
+  }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .contenedor {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 10px;
   }
 }

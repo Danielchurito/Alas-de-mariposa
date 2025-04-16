@@ -1,21 +1,18 @@
-.Header {
-  z-index: 99999999;
-}
-
 .Nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 10px;
   background-color: rgba(197, 66, 184, 0.527);
-  position: relative;
+
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
 }
 
 .Nav img {
-  max-width: 100%;
   max-height: 50px;
 }
 
@@ -34,11 +31,27 @@
   color: white;
 }
 
+@media (min-width: 1024px) {
+  .Nav {
+    padding: 5px 10px;
+    width: 100%;
+  }
+
+  .Nav img {
+    max-width: 70px;
+  }
+
+  .Nav button {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
 @media (max-width: 768px) {
   .Nav {
     flex-direction: column;
     align-items: center;
-    height: auto;
+    width: 100%;
   }
 
   .Nav img {

@@ -15,8 +15,7 @@ function Layout({ children }) {
     <html lang="es">
       <body>
         <Header />
-
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
