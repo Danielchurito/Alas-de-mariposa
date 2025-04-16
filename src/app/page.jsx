@@ -33,33 +33,37 @@ export default function Homepage() {
   };
 
   return (
-    <div className={sty.comments_container}>
-      <h1>Dejanos tu cometario</h1>
-      <form onSubmit={handleSubmit} className="comment-form">
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Tu nombre"
-          className="comment-input"
-          required
-        />
+    <>
+      <div className={sty.c}>
+        <div className={sty.comments_container}>
+          <h1>Dejanos tu cometario</h1>
+          <form onSubmit={handleSubmit} className={sty.comment_form}>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Tu nombre"
+              className={sty.comment_input}
+              required
+            />
 
-        <input
-          type="text"
-          id="text"
-          value={comment}
-          onChange={(e) => setComment(e.target.value)}
-          placeholder="Escribe algo..."
-          className="comment-input"
-          required
-        />
-        <button type="submit" className="comment-button">
-          Agregar
-        </button>
-      </form>
-      <div className="comments-list"></div>
-    </div>
+            <input
+              type="text"
+              id="text"
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
+              placeholder="Escribe algo..."
+              className={sty.comment_input}
+              required
+            />
+            <button type="submit" className={sty.comment_button}>
+              Agregar
+            </button>
+          </form>
+          <div className={sty.comments_list}></div>
+        </div>
+      </div>
+    </>
   );
 }

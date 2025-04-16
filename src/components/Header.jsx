@@ -1,19 +1,20 @@
 import Link from "next/link";
-import "./styles/Header.css";
+import sty from "./styles/Header.module.css";
+import "./styles/Header.module.css";
 
 function Header() {
   return (
-    <header>
-      <nav className="Nav">
+    <header className={sty.Header}>
+      <nav className={sty.Nav}>
         <Link href="/">
-          <img src="/media/AlasDeMariposaN.png" alt="" />
+          <img src="/media/AlasDeMariposaB.png" alt="" />
         </Link>
 
         <Link href="/about">
-          <button className="button">about </button>
+          <button className={sty.button}>Nosotros </button>
         </Link>
         <Link href="/comments">
-          <button className="button">comments </button>
+          <button className={sty.button}>Comentarios </button>
         </Link>
       </nav>
     </header>

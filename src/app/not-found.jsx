@@ -1,10 +1,10 @@
 import React from "react";
-import "./styles/NotFound.module.css";
+import styles from "./styles/NotFound.module.css";
 
 function Notfound() {
   return (
-    <div className="container">
-      <h1 className="h1">Not Found</h1>
+    <div className={styles.container}>
+      <h1 className={styles.h1}>Not Found</h1>
     </div>
   );
 }

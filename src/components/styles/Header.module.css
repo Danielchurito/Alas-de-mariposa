@@ -1,16 +1,17 @@
+.Header {
+  z-index: 99999999;
+}
+
 .Nav {
-  height: 10vh;
-  width: 100vw;
-  background-color: rgba(173, 216, 230, 0.527);
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 10px;
-  padding: 10px;
-  z-index: 99999999;
-  position: fixed;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(197, 66, 184, 0.527);
+  position: relative;
   top: 0;
   left: 0;
+  width: 100%;
 }
 
 .Nav img {
@@ -31,4 +32,16 @@
   border-radius: 5px;
   font-size: 30px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .Nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .Nav img {
+    max-width: 80px;
+  }
 }

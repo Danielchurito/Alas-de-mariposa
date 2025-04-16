@@ -1,4 +1,8 @@
 /* Contenedor principal pastel, azul fucsia, naranja, */
+.c {
+  padding-top: 30vh;
+}
+
 .comments_container {
   max-width: 600px;
   margin: 0 auto;
@@ -11,20 +15,20 @@
 }
 
 /* Título */
-.comments-container h1 {
+.comments_container h1 {
   text-align: center;
   color: #333;
   margin-bottom: 20px;
 }
 
 /* Formulario */
-.comment-form {
+.comment_form {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.comment-input {
+.comment_input {
   flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
@@ -32,7 +36,7 @@
   font-size: 16px;
 }
 
-.comment-button {
+.comment_button {
   padding: 10px 20px;
   background-color: rgb(255, 93, 255);
   color: white;
@@ -42,18 +46,18 @@
   font-size: 16px;
 }
 
-.comment-button:hover {
+.comment_button:hover {
   background-color: pink;
 }
 
 /* Lista de comentarios */
-.comments-list {
+.comments_list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.comment-item {
+.comment_item {
   padding: 15px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -61,7 +65,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.comment-item p {
+.comment_item p {
   margin: 0;
   color: #555;
 }
