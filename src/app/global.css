@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: gray;
+  overflow-x: hidden;
   background-image: url("/media/fondo.jpg");
   background-size: cover;
   background-position: center;
