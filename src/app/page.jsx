@@ -36,7 +36,7 @@ export default function Homepage() {
     <>
       <div className={sty.c}>
         <div className={sty.comments_container}>
-          <h1>Dejanos tu cometario</h1>
+          <h1>Dejanos tu comentario</h1>
           <form onSubmit={handleSubmit} className={sty.comment_form}>
             <input
               type="text"
