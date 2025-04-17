@@ -1,12 +1,17 @@
 import styles from "./styles/page.module.css";
+import { prisma } from "@/libs/prisma";
 
 async function getData() {
-  const items = await fetch(
-    process.env.APIMESSAGEPORT || "http://localhost:3000/api/tasks"
-  );
-  const data = await items.json();
-  return data;
+  const query = await prisma.comment.findMany({
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
+  return query;
 }
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 async function Message() {
   const data = await getData();
@@ -20,11 +25,11 @@ async function Message() {
               <div className={styles.dp}>
                 <p>{e.name}</p>
                 <p>
-                  {e.createdAt.slice(8, 10) +
-                    e.createdAt.slice(4, 5) +
-                    e.createdAt.slice(5, 7) +
-                    e.createdAt.slice(7, 8) +
-                    e.createdAt.slice(0, 4)}
+                  {new Date(e.createdAt).toLocaleDateString("es-ES", {
+                    year: "numeric",
+                    month: "2-digit",
+                    day: "2-digit",
+                  })}
                 </p>
               </div>
               <p className={styles.hp}>{e.text}</p>

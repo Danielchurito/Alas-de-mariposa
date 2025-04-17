@@ -1,14 +1,6 @@
 import { prisma } from "@/libs/prisma";
 import { NextResponse } from "next/server";
 
-export const GET = async () => {
-  const tasks = await prisma.comment.findMany({
-    orderBy: { createdAt: "desc" },
-  });
-  console.log(tasks);
-  return NextResponse.json(tasks);
-};
-
 export const POST = async (request) => {
   try {
     const data = await request.json();
