@@ -19,7 +19,7 @@ async function Message() {
     <>
       <div className={styles.c}>
         <div className={styles.contenedor}>
-          <h1>Seccion de Comentarios</h1>
+          <h1>Sección de Comentarios</h1>
           {data.map((e) => (
             <div key={e.id} className={styles.comment}>
               <div className={styles.dp}>
@@ -29,6 +29,9 @@ async function Message() {
                     year: "numeric",
                     month: "2-digit",
                     day: "2-digit",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: true,
                   })}
                 </p>
               </div>

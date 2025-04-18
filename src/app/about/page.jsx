@@ -20,7 +20,7 @@ function About() {
           </div>
           <div className={styles.mision_vision}>
             <div className={styles.mision}>
-              <h1>mision</h1>
+              <h1>misión</h1>
               <p>
                 Empoderar a las mujeres en estado de vulnerabilidad para que
                 lideren el cambio hacia comunidades sostenibles y resilientes,
@@ -60,7 +60,7 @@ function About() {
               </p>
             </div>
             <div className={styles.vision}>
-              <h1>vision</h1>
+              <h1>visión</h1>
               <p>
                 Un futuro donde las mujeres en estado de vulnerabilidad sean
                 líderes de cambio en sus comunidades, viviendo con dignidad,
